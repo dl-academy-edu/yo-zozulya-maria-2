@@ -1,0 +1,212 @@
+.animation-title {
+font-family: 'Montserrat';
+font-size: 36px;
+font-weight: 700;
+line-height: 44px;
+margin-left: 150px;
+margin-top: 50px;
+}
+
+.animation-pointers {
+    display: flex;
+    gap: 20px;
+    font-family: 'Crimson text';
+    font-style: italic;
+    margin-left: 150px;
+    &__arrow {
+        background-image: url(../img/icon/arrow.svg);
+        width: 8px;
+        height: 12px;
+        transition: 0.4s;
+    }
+    &__arrow:hover{
+        background-image: url(../img/icon/arrow-hover.svg);
+        width: 8px;
+        height: 12px;
+    }
+    
+}
+
+.message {
+  
+    &__one {
+        z-index: 15;
+        position: absolute;
+        left: 231px;
+        top: 527px;
+        opacity: 0;
+        animation: message-one infinite 10s forwards;
+
+        
+    }
+    &__two {
+        z-index: 15;
+        position: absolute;
+        left: 77px;
+        top: 581px;
+        opacity: 0;
+        animation: message-two infinite 10s forwards;
+    }
+    &__three {
+        position: absolute;
+        z-index: 15;
+        top: 500px;
+        left: 1000px;
+        opacity: 0;
+        animation: message-three infinite 10s forwards;
+
+    }
+    &__four {
+        position: absolute;
+        z-index: 15;
+        left: 231px;
+        top: 527px;
+        opacity: 0;
+        animation: message-four infinite 10s forwards;
+    }
+
+}
+
+.animation {
+    position: relative;
+    &__clouds {
+        position: absolute;
+        width: 100%;
+        animation: clouds 45s forwards;
+        animation-iteration-count:infinite;
+       
+    }
+    &__others {
+        position: absolute;
+        top: 135px;
+
+    }
+    &__cars {
+        position: absolute;
+        top: 400px;
+        z-index: 2;
+        width: 100%;
+        animation: cars 5s forwards;
+        animation-iteration-count:infinite;
+    }
+    &__lantern-one {
+        position: absolute;
+        z-index: 3;
+        top: 150px;
+        left: 1000px;
+    }
+    &__lantern-two {
+        position: absolute;
+        z-index: 10;
+        top: 147px;
+        left: 1200px;
+    }
+    &__taxi {
+        position: absolute;
+        z-index: 4;
+        top: 400px;
+        left: 2000px;
+        animation: taxi 10s forwards;
+        animation-iteration-count:infinite;
+    }
+    &__man {
+        position: absolute;
+        z-index: 5;
+        left: 253px;
+        top: 310px;
+    }
+    &__woman {
+        position: absolute;
+        z-index: 6;
+        left: 80px;
+        top: 329px;
+    }
+}
+
+@keyframes clouds {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: -100%;
+        width: 100%;
+      }
+}
+
+@keyframes cars {
+    0% {
+        margin-left: -1000px;
+      }
+    
+    100% {
+        margin-left: 2000px;
+      }
+}
+
+@keyframes taxi {
+    0% {
+        margin-left: 100%;
+    }
+    100% {
+        margin-left: -250%;
+    }
+}
+
+@keyframes message-two {
+    0% { opacity: 0;
+    
+    }
+    10% { opacity: 1;
+
+    }
+    15% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes message-one {
+    15% { opacity: 0;
+    
+    }
+    20% { opacity: 1;
+
+    }
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes message-three {
+    25% { opacity: 0;
+    }
+
+    35% { opacity: 1;
+
+    }
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes message-four {
+    50% { opacity: 0;
+    }
+    70% { opacity: 1;
+    }
+    100% { opacity: 0;
+    }
+}
