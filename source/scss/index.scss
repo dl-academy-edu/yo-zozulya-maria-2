@@ -5,12 +5,17 @@
     margin-top: 130px;
     width: 1180px;
     height: 372px;
+    @media (max-width: 768px) {
+        max-width: 900px;
+        margin-left: 70px;
+      }
     
     &__button {
         margin-left: 31px;
         width: 31px;
         height: 3px;
         background-color: #D6CAC2;
+        transition: 0.4s;
 
     }
     &__button:hover {
@@ -31,11 +36,17 @@
         position: absolute;
         top: 143px;
         left: 615px;
+        @media (max-width: 768px) {
+            width :385px;
+            height: 286px;
+            top: 300px;
+            left: 500px;
+        }
     }
-    &__banner__message {
+    &__message {
         margin-left: 130px;
     }
-    &__banner__shipping {
+    &__shipping {
         font-family: 'Open Sans' ;
         background-color: #C29974;
         margin-top: 90px;
@@ -44,14 +55,18 @@
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
+        @media (max-width: 768px) {
+            max-width: 900px;
+            margin-top: 50px;
+          }
     }
-    &__banner__shipping-text {
+    &__shipping-text {
         padding: 10px;
         font-size: 12px;
         font-weight: 700;
         line-height: 16px;
     }
-    &__banner__design {
+    &__design {
         font-family: 'Crimson Text';
         font-style: italic;
         font-weight: 400;
@@ -59,13 +74,13 @@
         margin-left: 5px;
         margin-top: -10px;
     }
-    &__banner__button-explore {
+    &__button-explore {
         width: 161px;
         height: 40px;
         margin-top: 20px;
         margin-left: 5px;
     }
-    &__.banner__number {
+    &__number {
         padding-left: 28px;
         padding-top: 27px;
         margin-bottom: 10px;
@@ -77,21 +92,22 @@
     display: flex;
     gap: 23px;
 
-    &__products__title {
+    &__title {
         margin-top: 130px;
         margin-bottom: 30px;
         font-size: 38px;
         text-transform: uppercase;
     }
-    &__products__item {
+    &__item {
         position: relative;
         max-width: 281px;
         display: flex;
         justify-content: center;
         align-items: center;
+        min-width: 250px;
     
     }
-    &__products__text {
+    &__text {
         text-align: center;
         display: flex;
         position: absolute;
@@ -102,7 +118,7 @@
         max-width: 110px;
         color: #FFFFFF;
     }
-    &__.products__text:hover {
+    &__text:hover {
         text-decoration-line: underline;
     
     }
@@ -111,7 +127,7 @@
 
 .delivery {
     display: flex;
-    &__delivery__item {
+    &__item {
         margin-bottom: 20px;
         font-family: Crimson Text;
         font-size: 26px;
@@ -120,8 +136,11 @@
         line-height: 34px;
         letter-spacing: 0em;
         text-align: left;
+        @media (max-width: 768px) {
+            margin-left: 200px;
+        }
        }
-    &__delivery__button {
+    &__button {
         font-weight: 700;
         font-family: 'Crimson Text';
         background: rgba(112, 187, 220, 0.2);
@@ -130,34 +149,51 @@
         padding: 11px 180px 11px 60px;
         margin-left: -60px;
     }
-    &__delivery__title {
+    &__title {
         font-size: 38px;
         margin-top: 39px;
         margin-left: 120px;
         font-size: 38px;
+        @media (max-width: 768px) {
+            position: relative;
+            top: -20px;
+            left: 180px;
+        }
     }
-    &__delivery__elements {
+    &__elements {
         margin-top: 100px;
         margin-left: -200px;
         max-width: 480px;
     }
-    &__delivery__description {
+    &__description {
         margin-top: 178px;
         margin-left: -70px;
-        max-width: 480px;
         font-family: 'Open Sans';
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 15px;
+        @media (max-width: 768px) {
+            min-width: 314px;
+            margin-left: -125px;
+        }
       }
-    &__.delivery__description-1 {
+    &__description-1 {
         margin-bottom: 28px;
     }
-    &__delivery__description-2 {
+    &__description-2 {
         font-family: 'Open Sans';
         size: 16px;
         margin-bottom: 30px;
-    
+    }
+    &__picture {
+        min-width: 480px;
+        @media (max-width: 768px) {
+            min-width: 258px;
+            margin-left: -150px;
+            position: relative;
+            left: 250px;
+        }
+
     }
 
 }
@@ -173,7 +209,19 @@
 .logos {
     display: flex;
     gap: 127px;
-    margin-top: 98px;
+    position: relative;
+    top: 50px;
+    @media (max-width: 768px) {
+        position: relative;
+        left: 100px;
+        top: 40px;
+    }
+    &__picture {
+        @media (max-width: 768px) {
+            min-width: 115px;
+            min-height: 30px;
+        }
+    }
 }
 
 .about {
@@ -181,42 +229,69 @@
     margin-top: 90px;
     gap: 60px;
     padding-bottom: 160px;
+    @media (max-width: 768px) {
+        min-width: 314px;
+        margin-left: 60px;
+    }
     &__design-life-title {
         font-size: 38px;
         text-transform: uppercase;
         position: relative;
-        bottom: 25px;
+        bottom: 50px;
         left: 28px;
+        @media (max-width: 768px) {
+            font-size: 30px;
+            white-space: nowrap;
+            position: relative;
+            top: -40px;
+        }
     }
     &__design-life-item {
         margin-left: 30px;
-        margin-top: -3px
+        margin-top: -31px;
+        @media (max-width: 768px) {
+           
+        }
     }
     &__design-life-about {
         position: relative;
-        bottom: 10px;
+        font-style: italic;
+        bottom: 30px;
         font-family: Crimson Text;
         font-size: 26px;
-        font-weight: 400
+        font-weight: 400;
+        @media (max-width: 768px) {
+            margin-top: 1px;
+        }
+
     }
     &___design-life-text {
         font-size: 16px;
-        margin-top: -1px;
         font-family: 'Open Sans';
         font-size: 16px;
         font-weight: 400;
         max-width: 483px;
+        @media (max-width: 768px) {
+            max-width: 279.3px;
+        }
     }
     &__design-life {
         width: 543px;
         height: 228px;
         background: #E1F0F7;
         margin-top: 24px;
+        @media (max-width: 768px) {
+            min-width: 314px;
+            min-height: 302px;
+        }
     }
     &__design-button {
         width: 123px;
         height: 40px;
-        margin-top: 33px;
+        margin-top: 0px;
+        @media (max-width: 768px) {
+           max-width: 128px;
+        }
     }
 }
 
@@ -226,25 +301,36 @@
     height: 209px;
     background: #E1F0F7;
     margin-top: 22px;
-    &__map__title {
+    @media (max-width: 768px) {
+        margin-left: 200px;
+        width: 543px;
+        height: 280px;
+    }
+    &__title {
         font-size: 38px;
         text-transform: uppercase;
         position: relative;
-        bottom: 25px;
+        bottom: 50px;
         left: 30px;
     }
-    &__map__text {
+    &__text {
         margin-bottom: 30px;
         font-family: 'Open Sans';
         font-size: 16px;
         font-weight: 400;
         max-width: 483px;
         margin-left: 28px;
-        margin-top: 3px;
+        margin-top: -50px;
     }
-    &__map__adress {
+    &__adress {
+        width:483px;
+        height: 196px;
         position: relative;
         left: 30px;
+        @media (max-width: 768px) {
+            width: 284px;
+            height: 151px;
+        }
     }
 }
 
@@ -262,6 +348,8 @@ button {
 
     &__L {
         background: none;
+        transition: 0.4s;
+        min-width: 36px;
         
     }
     &__L:active {
@@ -272,6 +360,8 @@ button {
     }
     &__R {
         background: none;
+        transition: 0.4s;
+        min-width: 36px;
     }
     &__R:active {
         background: none;

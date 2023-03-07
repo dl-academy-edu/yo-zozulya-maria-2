@@ -44,7 +44,11 @@
             </ul>
              <div class="banner__text">
                 <h1 class="banner__title"> THE OOH NOO COLLECTION</h1>
-                <img class="banner__monster" src="../img/monster.png" alt="monster" width="635" height="461">
+                <picture>
+                    <source srcset="../img/monster-tablet.png"
+                    media="(max-width: 768px)">
+                    <img class="banner__monster" src="../img/monster.png" alt="monster" width="635" height="461">
+                </picture>
                 <div class="banner__message">
                     <p class="banner__design">Designed in Slovenia</p>
                     <button class="blackbutton banner__button-explore" type="button">EXPLORE NOW</button> 
@@ -90,7 +94,11 @@
         </div>
     </section>
     <section class="container delivery">
-        <img src="../img/dress.jpg" alt="dress" width="480" height="560">
+        <picture>
+            <source srcset="./img/dress-tablet.jpg, ./img/dress-tablet-2x.jpg 2x"
+            media="(max-width: 768px)">
+            <img class="delivery__picture" src="../img/dress.jpg" alt="женщина в белом платье">
+        </picture>
         <h2 class="delivery__title">DELIVERY</h2>
         <ul class="delivery__elements">
             <li class="delivery__item"><a class="delivery__button" href="#">Delivery</a></li>
@@ -107,13 +115,30 @@
     </section>
     <section class="container logos">
         <a href="#">
-            <img src="../img/mail.jpg" alt="mail" width="193" height="60"></a>
+             <picture>
+                <source srcset="./img/mail-tablet.png"
+                media="(max-width: 768px)">
+                <img class="logos__picture" src="./img/mail.png" alt="mail"></a>
+            </picture>
+        <a href="#"> 
+            <picture>
+                <source srcset="/img/apple-tablet.png"
+                media="(max-width: 768px)">
+                <img class="logos__picture" src="./img/apple.png" alt="apple"></a>
+             </picture>
+            <a href="#"> 
+                <picture>
+                    <source srcset="/img/eltex-tablet.png"
+                    media="(max-width: 768px)">
+                    <img class="logos__picture" src="./img/eltex.png" alt="eltex"></a>
+            </picture>    
         <a href="#">
-            <img src="../img/apple.jpg" alt="apple" width="179" height="61"></a>
-        <a href="#">
-            <img src="../img/eltex.jpg" alt="eltex" width="216" height="46"></a>
-        <a href="#">
-            <img src="../img/owox.jpg" alt="owox" width="211" height="40"></a>
+             <picture>
+                <source srcset="./img/owox-tablet.png"
+                media="(max-width: 768px)">
+                <img class="logos__picture" src="./img/owox.png" alt="owox"></a>
+             </picture>
+            
         </section>
     <section class="container">
         <div class="about">
@@ -126,7 +151,7 @@
         <div class="map">
             <h2 class="map__title">Contacts</h2>
             <p class="map__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p> 
-            <iframe class="map__adress" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9490.1485980241!2d49.2903386!3d53.5124631!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1669041543836!5m2!1sru!2sru" width="483px" height="196px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            <iframe class="map__adress" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9490.1485980241!2d49.2903386!3d53.5124631!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1669041543836!5m2!1sru!2sru"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
         </div>
 </section>
 </main>

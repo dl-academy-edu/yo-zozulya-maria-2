@@ -7,7 +7,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+
 }
 
 html,
@@ -46,6 +46,7 @@ body {
   color: #FFFFFF;
   background: #000000;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .joinbutton {
@@ -60,6 +61,7 @@ body {
   width: 81px;
   height: 45px;
   border: none;
+  transition: 0.4s;
   
 }
 
@@ -77,21 +79,21 @@ fieldset {
   font-weight: 700;
 }
 
-footer {
+.footer {
  background-color: #434343;
  color: #FFFFFF;
  font-family: 'Open Sans';
  font-weight: 400;
-}
+ @media (max-width: 768px) {
+    min-width: max-content; 
+    font-size: 16px;
+ }
 
-.basement {
+ &__basement {
   display: flex;
   gap: 20px;
-
-}
-
-
-.footer__title {
+ }
+ &__title {
   border-color: #666666;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -100,18 +102,25 @@ footer {
   color: #AAAAAA;
   margin-top: 100px;
   margin-bottom: 15px;
+  
 
-}
-
-.footer-item {
+ }
+ &__item {
   margin-bottom: 21px;
-}
 
-.footer-item:hover {
+ }
+
+ &__item:hover {
   opacity: 0.5;
+ }
+ &__link {
+   color: #FFFFFF;
+ }
 }
 
-header {
+
+
+.header {
   display: flex;
   margin-top: 33px;
   margin-bottom: 33px;
@@ -119,15 +128,75 @@ header {
   font-family: 'Open Sans';
   font-weight: 400;
   text-transform: uppercase;
-}
+  @media (max-width: 768px) {
+    margin-bottom: 0px;
+  }
+  &__logo {
+    margin-right: 60px;
+    margin-top: 50px;
+    transition: 0.4s;
+    @media (max-width: 768px) {
+      margin-left: 50px;
+      position: relative;
+      top: 60px;
+    }
+  }
+  &__logo:hover {
+    opacity: 0.5;
+  }
+  &__list-item:hover {
+    opacity: 0.5;
+  }
+  &__logo:active {
+    opacity: 0.2;
+  }
+  &__nav {
+    display: flex;
+  }
+  &__list {
+    display: flex;
+  }
+  &__contact {
+    display: flex;
+    margin-right: -10px;
+  }
+  &__list-item {
+    margin-right: 20px;
+    margin-top: 70px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.4s;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__nav {
+    margin-right: 500px;
+  }
+  &__list {
+    color: #000000;
+  }
+  &__list-item-glass {
+    margin-right: 20px;
+    margin-top: 70px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.4s;
+    @media (max-width: 768px) {
+      left: 968px;
+      position: absolute;
+      top: 66px;
+    }
+  }
+  &__list-item:active {
+    opacity: 0.2;
+  }
+  &__form {
+    display: flex;
+  }
 
-
-.header__nav {
-  margin-right: 500px;
-}
-
-.header__list {
-  color: #000000;
 }
 
 
@@ -138,6 +207,9 @@ header {
   left: 910px;
   top: 171px;
   border: none;
+  @media (max-width: 768px) {
+    width: 130px;
+  }
 }
 
 .emailbutton:hover {
@@ -192,51 +264,6 @@ header {
   margin-right: auto;
 }
 
-.header__logo {
-  margin-right: 60px;
-  margin-top: 50px;
-}
-
-.header__logo:hover {
-  opacity: 0.5;
-}
-
-.header__logo:active {
-  opacity: 0.2;
-}
-
-.header__nav {
-  display: flex;
-  
-}
-
-.header__list {
-  display: flex;
-
-}
-
-.header__contact {
-  display: flex;
-  margin-right: -10px;
-}
-
-.header__list-item {
-  margin-right: 20px;
-  margin-top: 70px;
-  font-family: 'Open Sans';
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.header__list-item:hover {
-opacity: 0.5;
-}
-
-.header__list-item:active {
-opacity: 0.2;
-}
-
-
 
 .link-info {
   margin-left: 225px;
@@ -246,14 +273,6 @@ opacity: 0.2;
   font-family: 'Crimson Text';
   font-weight: 400;
   font-size: 26px;
-}
-
-.footer__form {
-  display: flex;
-}
-
-.footer-link {
-  color: #FFFFFF;
 }
 
 .bottom {
@@ -267,13 +286,14 @@ opacity: 0.2;
 }
 
 .copyright {
-  margin-right: 115px
-  
+  margin-right: 115px;
+
 }
 
 .drline {
   color: #A2A2A2;
   margin-right: 80px;
+  
 }
 
 .bottom-item {
@@ -380,6 +400,10 @@ opacity: 0.2;
   max-width: 680px;
   background: #E5EAF8;
   padding: 40px 60px;
+  @media (max-width: 768px) {
+    margin-top: 300px;
+    margin-left: 200px;
+  }
 }
 
 .column__two-input {

@@ -28,11 +28,19 @@
     width: 100%;
     height: 254px;
     background: rgba(125, 151, 218, 0.2);
+    @media (max-width: 768px) {
+        min-width: max-content;
+        height: 323px;
+    }
     margin-top: 58px;
     &__cost {
         display: flex;
         margin-top: 36px;
         margin-left: 143px;
+        @media (max-width: 768px) {
+            position: relative;
+            left: -150px;
+        }
     }
     &__cost-label {
         font-family: 'Open Sans';
@@ -89,6 +97,11 @@
     margin-top: 34px;
     margin-left: 110px;
     gap: 15px;
+    @media (max-width: 768px) {
+        position: relative;
+        left: -150px;
+        top: -30px;
+    }
     &__list {
         display: flex;
         flex-direction: column;
@@ -115,6 +128,7 @@
         position: absolute;
         opacity: 0;
         margin: 0;
+        transition: 0.4s;
     }
     &__checkbox-label:active {
         text-decoration-line: underline;
@@ -136,7 +150,7 @@
         position: absolute;
         margin-left: -30px;
     }
-    &__checkbox:checked + .checkbox-label::before {
+    &__checkbox:checked +  &__checkbox-label::before {
         content: "";
         width: 19px;
         height: 19px;
@@ -150,6 +164,11 @@
     flex-direction: column;
     margin-top: 34px;
     margin-left: 124px;
+    @media (max-width: 768px) {
+        position: relative;
+        left: -200px;
+        top: -10px;
+    }
     &__legend {
         font-family: 'Open Sans';
         font-size: 16px;
@@ -199,6 +218,12 @@
     flex-direction: column;
     margin-top: 34px;
     margin-left: 72px;
+    @media (max-width: 768px) {
+        position: relative;
+        top: 170px;
+        left: -800px;
+
+    }
     &__legend {
         font-family: 'Open Sans';
         font-size: 16px;
@@ -226,6 +251,7 @@
         font-family: 'Open Sans';
         font-size: 16px;
         font-weight: 400;
+        transition: 0.4s;
     }
     &__label:hover {
         opacity: 0.4;
