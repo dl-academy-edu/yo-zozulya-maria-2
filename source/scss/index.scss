@@ -3,11 +3,16 @@
     background-repeat: no-repeat;
     background-color:  #EEE4DB;
     margin-top: 130px;
-    width: 1180px;
+    max-width: 1180px;
     height: 372px;
     @media (max-width: 768px) {
-        max-width: 900px;
+        min-width: 900px;
         margin-left: 70px;
+      }
+      @media (max-width: 375px) {
+        min-width: 1470px;
+        min-height: 448px;
+        margin-left: -21px;
       }
     
     &__button {
@@ -37,7 +42,7 @@
         top: 143px;
         left: 615px;
         @media (max-width: 768px) {
-            width :385px;
+            max-width :385px;
             height: 286px;
             top: 300px;
             left: 500px;
@@ -58,6 +63,10 @@
         @media (max-width: 768px) {
             max-width: 900px;
             margin-top: 50px;
+          }
+          @media (max-width: 375px) {
+            min-width: 1470px;
+            margin-top: 140px;
           }
     }
     &__shipping-text {

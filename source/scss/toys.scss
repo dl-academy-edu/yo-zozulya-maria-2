@@ -4,6 +4,9 @@
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
+    @media (max-width: 768px) {
+        margin-top: 100px;
+    }
 }
 
 .toys-catalog {
@@ -287,6 +290,11 @@
     background: #000000;
     margin-top: 73px;
     margin-left: 60px;
+    @media (max-width: 768px) {
+        position: relative;
+        left: -700px;
+        top: 150px;
+    }
 }
 
 
@@ -295,6 +303,10 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    @media (max-width: 768px) {
+        position: relative;
+        left: 300px;
+    }
     &__list-1{
         margin-top: 60px;
         display: flex;
@@ -318,6 +330,14 @@
         letter-spacing: 0em;
         text-align: center;
      }
+     &__picture {
+        min-width: 380px;
+        min-height: 385px;
+        @media (max-width: 768px) {
+            min-width: 203px;
+            min-height: 211px;
+        }
+     }
 }
 
 
@@ -330,6 +350,11 @@
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 700;
+    @media (max-width: 768px) {
+        max-width: 768px;
+        position: relative;
+        left: 300px;
+    }
     &__toys-arrow-l {
         position: relative;
         right: 400px;
