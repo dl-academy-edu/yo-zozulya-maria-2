@@ -32,7 +32,7 @@
     height: 254px;
     background: rgba(125, 151, 218, 0.2);
     @media (max-width: 768px) {
-        min-width: max-content;
+        min-width: 768px;
         height: 323px;
     }
     margin-top: 58px;
@@ -42,7 +42,7 @@
         margin-left: 143px;
         @media (max-width: 768px) {
             position: relative;
-            left: -150px;
+            left: -199px;
         }
     }
     &__cost-label {
@@ -52,6 +52,7 @@
         line-height: 22px;
         margin-left: 110px;
         margin-bottom: 40px;
+        
     }
     &__cost-input {
         height: 1px;
@@ -116,6 +117,7 @@
         line-height: 22px;
         margin-bottom: 15px;
         margin-left: -15px;
+        
     }
     &__input {
         margin-bottom: 15px;
@@ -126,6 +128,10 @@
         font-weight: 400;
         line-height: 22px;  
         margin-left: 15px;
+        @media (max-width: 768px) {
+            position: relative;
+            top: 10px;
+        }
     }
     &__checkbox {
         position: absolute;
@@ -224,7 +230,7 @@
     @media (max-width: 768px) {
         position: relative;
         top: 170px;
-        left: -800px;
+        left: -900px;
 
     }
     &__legend {
@@ -291,9 +297,9 @@
     margin-top: 73px;
     margin-left: 60px;
     @media (max-width: 768px) {
+        left: -716px;
         position: relative;
-        left: -700px;
-        top: 150px;
+        top: 174px;
     }
 }
 
@@ -305,7 +311,7 @@
     text-align: center;
     @media (max-width: 768px) {
         position: relative;
-        left: 300px;
+        left: 10px;
     }
     &__list-1{
         margin-top: 60px;
@@ -353,15 +359,22 @@
     @media (max-width: 768px) {
         max-width: 768px;
         position: relative;
-        left: 300px;
+        left: 35px;
+    }
+    @media (max-width: 375px) {
+        left: 219px;
     }
     &__toys-arrow-l {
         position: relative;
-        right: 400px;
+        right: 200px;
+        @media (max-width: 375px) {
+            position: relative;
+            right: -300px;
+        }
     }
     &__toys-arrow-r {
         position: relative;
-        left: 400px;
+          left: 128px;
     }
     &__toys-numbers {
 

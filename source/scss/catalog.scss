@@ -13,7 +13,10 @@
 .catalog-1 {
      margin-top: 50px;
      display: flex;
-     margin-left: 55px;
+     margin-left: -18px;
+     @media (max-width: 768px) {
+        max-width: 350px;
+     }
      &__item {
         margin-right: 20px;
         margin-bottom: 25px;
@@ -21,7 +24,10 @@
         @media (max-width: 768px) {
             min-width: 203px;
             position: relative;
-            left: 229px;
+            left: 33px;
+        }
+        @media (max-width: 375px) {
+            max-width: 160px;
         }
         
     }
@@ -51,7 +57,7 @@
     
 .catalog-2 {
      display: flex;
-     margin-left: 280px;
+     margin-left: 18px;
      margin-top: -70px;
      &__item {
         margin-right: 20px;
@@ -127,6 +133,7 @@
         text-transform: uppercase;
         @media (max-width: 768px) {
             white-space: nowrap;
+            margin-left: 142px;
         }
     }
     
@@ -139,15 +146,26 @@
         line-height: 22px;
         width: 680px;
         margin-bottom: 55px;
+        @media (max-width: 768px) {
+            position: relative;
+            left: -219px;
+        }
         &__item {
             margin-bottom: 15px;
         }
     }
       
     .catalog__arrow {
+        left: 239px;
         position: absolute;
-        top: 224px;
-        left: 334px;
+        top: 305px;
+        @media (max-width: 768px) {
+            left: 97px;
+            top: 326px;
+        }
+        @media (max-width: 768px) {
+            top: 370px;
+        }
     
     }
     

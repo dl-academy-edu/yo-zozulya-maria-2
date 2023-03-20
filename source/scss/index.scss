@@ -6,14 +6,14 @@
     max-width: 1180px;
     height: 372px;
     @media (max-width: 768px) {
-        min-width: 900px;
-        margin-left: 70px;
+        min-width: 648px;
+        margin-left: 170px;
       }
-      @media (max-width: 375px) {
-        min-width: 1470px;
-        min-height: 448px;
-        margin-left: -21px;
-      }
+    //   @media (max-width: 375px) {
+    //     min-width: 375px;
+    //     min-height: 448px;
+    //     margin-left: -21px;
+    //   }
     
     &__button {
         margin-left: 31px;
@@ -21,6 +21,9 @@
         height: 3px;
         background-color: #D6CAC2;
         transition: 0.4s;
+        @media (max-width: 768px) {
+            margin-left: -27px;
+        }
 
     }
     &__button:hover {
@@ -36,16 +39,19 @@
     }
     &__text {
         margin-top: -100px;
+        @media (max-width: 768px) {
+            margin-left: -72px;
+        }
     }
     &__monster {
         position: absolute;
-        top: 143px;
+        top: 217px;
         left: 615px;
         @media (max-width: 768px) {
             max-width :385px;
             height: 286px;
-            top: 300px;
-            left: 500px;
+            top: 360px;
+            left: 445px;
         }
     }
     &__message {
@@ -54,20 +60,20 @@
     &__shipping {
         font-family: 'Open Sans' ;
         background-color: #C29974;
-        margin-top: 90px;
+        margin-top: 66px;
         width: 1180px;
         height: 39px;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
         @media (max-width: 768px) {
-            max-width: 900px;
+            max-width: 648px;
             margin-top: 50px;
           }
-          @media (max-width: 375px) {
-            min-width: 1470px;
-            margin-top: 140px;
-          }
+        //   @media (max-width: 375px) {
+        //     max-width: 375px;
+        //     margin-top: 140px;
+        //   }
     }
     &__shipping-text {
         padding: 10px;
@@ -93,6 +99,9 @@
         padding-left: 28px;
         padding-top: 27px;
         margin-bottom: 10px;
+        @media (max-width: 768px) {
+            margin-left: -62px;
+        }
     }
 
 } 
@@ -114,6 +123,10 @@
         justify-content: center;
         align-items: center;
         min-width: 250px;
+        @media (max-width: 768px) {
+            max-width: 258px;
+            max-height: 248px;
+        }
     
     }
     &__text {
@@ -224,6 +237,9 @@
         position: relative;
         left: 100px;
         top: 40px;
+    }
+    @media (max-width: 375px) {
+        left: 29px;
     }
     &__picture {
         @media (max-width: 768px) {
@@ -352,7 +368,7 @@ button {
 .buttons {
     display: flex;
     margin-top: 31px;
-    margin-bottom: 90px;
+    margin-bottom: 18px;
     gap: 6px;
 
     &__L {

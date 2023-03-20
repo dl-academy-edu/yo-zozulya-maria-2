@@ -47,13 +47,15 @@
         margin-bottom: 20px;
         @media (max-width: 768px) {
             margin-top: 97px;
-            margin-left: -731px;
+            margin-left: -652px;
+            max-width: 536px;
         }
     }
     &__message {
         margin-bottom: 20px;
         @media (max-width: 768px) {
-            margin-left: -730px;
+            margin-left: -652px;
+            max-width: 536px;
         }
     }
     &__expert {
@@ -64,7 +66,7 @@
         text-transform: uppercase;
         @media (max-width: 768px) {
             white-space: nowrap;
-            margin-left: -737px;
+            margin-left: -652px;
             margin-top: 25px;
         }
     }

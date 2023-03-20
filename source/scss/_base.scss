@@ -85,12 +85,19 @@ fieldset {
  font-family: 'Open Sans';
  font-weight: 400;
  @media (max-width: 768px) {
-    min-width: 1470px; 
+    max-width: 768px; 
+ }
+ @media (max-width: 375px) {
+    max-width: 375px;
  }
 
  &__basement {
   display: flex;
   gap: 20px;
+  @media (max-width: 375px) {
+    flex-direction: column;
+  }
+
  }
  &__title {
   border-color: #666666;
@@ -99,8 +106,16 @@ fieldset {
   padding-bottom: 25px;
   width: 380px;
   color: #AAAAAA;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 15px;
+  @media (max-width: 768px) {
+    max-width: 203px;
+  }
+  @media (max-width: 375px) {
+    min-width: 335px;
+    margin-left: 30px;
+
+  }
   
 
  }
@@ -114,6 +129,19 @@ fieldset {
  }
  &__link {
    color: #FFFFFF;
+ }
+
+ &__list {
+  
+  
+ }
+
+ &__link-2 {
+  @media (max-width: 375px) {
+  position: relative;
+  left: 239px;
+  top: -114px;
+  }
  }
 }
 
@@ -135,7 +163,7 @@ fieldset {
     margin-top: 50px;
     transition: 0.4s;
     @media (max-width: 768px) {
-      margin-left: 50px;
+      margin-left: -3px;
       position: relative;
       top: 60px;
     }
@@ -184,9 +212,12 @@ fieldset {
     font-weight: 400;
     transition: 0.4s;
     @media (max-width: 768px) {
-      left: 968px;
+      left: 716px;
       position: absolute;
-      top: 66px;
+      top: 83px;
+    }
+    @media (max-width: 768px) {
+      left: 716px;
     }
   }
   &__list-item:active {
@@ -297,7 +328,12 @@ fieldset {
 
 .bottom-item {
   margin-top: 25px;
-  margin-bottom: 100px
+  margin-bottom: 100px;
+  @media (max-width: 768px) {
+    position: relative;
+    top: 50px;
+    left: -235px;
+  }
 }
 
 .rating {
@@ -401,7 +437,9 @@ fieldset {
   padding: 40px 60px;
   @media (max-width: 768px) {
     margin-top: 300px;
-    margin-left: 200px;
+    margin-left: 20px;
+    max-width: 648px;
+    padding: 23px 19px 15px 45px;
   }
 }
 
@@ -431,6 +469,9 @@ fieldset {
   border: 1px solid rgba(0, 0, 0, 0.2);
   width: 290px;
   height: 50px;
+  @media (max-width: 768px) {
+    max-width: 258px;
+  }
 }
 
 .name__input {
@@ -438,6 +479,9 @@ fieldset {
   height: 50px;
   margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  @media (max-width: 768px) {
+    max-width: 536px;
+  }
 }
 
 .contact__wrapper {
@@ -451,6 +495,9 @@ fieldset {
   width: 600px;
   height: 150px;
   margin-left: -18px;
+  @media (max-width: 768px) {
+    max-width: 536px;
+  }
 }
 
 .checkbox__wrapper {
