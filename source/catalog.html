@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+   @@include('blocks/header.html')
+    <main>
+        <section class="container">
+        <h1 class="catalog__title">Category Products</h1>
+       <p class="catalog-list">
+            <a href="#"> Home</a>
+            <a href="#" class="arrow catalog__arrow"> 
+            <a href="#"> Catalog</a>
+        </p>
+        
+        <ul class="catalog-1">
+            <li class="catalog-1__item">
+              <picture>
+                <source srcset="../img/sweater-tablet.jpg"
+                media="(max-width: 768px)">
+                <img  src="../img/sweater.jpg" alt="ароматическая свеча">
+              </picture>
+              <p class="catalog-1__link">APPAREL KIDS</p></a>
+            </li>
+            
+            <li class="catalog-1__item">
+              <picture>
+                <source srcset="../img/sock-tablet.jpg"
+                media="(max-width: 768px)">
+                <img  src="../img/sock.jpg" alt="ароматическая свеча">
+              </picture>
+              <a href="#"><p class="catalog-1__link">HOLIDAY SHOP</p> </a>
+            </li>
+            
+            <li class="catalog-1__item">
+              <picture>
+                <source srcset="../img/deer-tablet.jpg"
+                media="(max-width: 768px)">
+                <img  src="../img/deer.jpg" alt="ароматическая свеча">
+              </picture>
+              <a href="#"><p class="catalog-1__link">TOYS</p> </a>
+            </li>
+        </ul>
+        <ul class="catalog-2">
+            <li class="catalog-2__item">
+              <picture>
+                <source srcset="../img/man-tablet.jpg"
+                media="(max-width: 768px)">
+                <img  src="../img/man.jpg" alt="ароматическая свеча">
+              </picture>
+              <a href="#"><p class="catalog-2__link">ACCESSORIES</p></a>
+            </li>
+            
+            <li class="catalog-2__item">
+              <picture>
+                <source srcset="../img/flamingo-tablet.jpg"
+                media="(max-width: 768px)">
+                <img  src="../img/flamingo.jpg" alt="ароматическая свеча">
+              </picture>
+              <a href="#"><p class="catalog-2__link">SALE</p></a>
+            </li>
+           
+            <li class="catalog-2__item">
+              <picture>
+                <source srcset="../img/raincoat-tablet.jpg"
+                media="(max-width: 768px)">
+                <img  src="../img/raincoat.jpg" alt="ароматическая свеча">
+              </picture>
+              <a href="#"><p class="catalog-2__link">APPAREL ADULTS</p></a>
+            </li>
+        </ul>
+        <h2 class="description__title">Product description</h2>
+        <div class="description">
+        <p class="description__item">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+        <p class="description__item">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+        <p class="description__item">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+    </div>
+    </section>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="js/app.js" defer></script>
+</body>
+</html>

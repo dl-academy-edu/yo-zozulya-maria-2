@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+   @@include('blocks/header.html')
+    <main>
+        <section class="container">
+        <h1 class="toys__title">Toy for kids</h1>
+       <p class="toys-catalog"> <a href=""> Home</a> <a href="#" class="arrow"></a> Catalog <a href="#" class="arrow"> <a href=""> Toys</a>
+    </p>
+        </section>
+        <div class="shopping">
+            <div class="shopping__cost">
+            <label class="shopping__cost-label" for="cost">Cost</label> 
+            <input class="shopping__cost-input" id="cost" type="range"> 
+            <div class="cost-price">
+            <p class="cost-price__0">0</p>
+            <p class="cost-price__500">500</p> 
+            </div>
+            </div>
+            <div class="color">
+                <ul class="color__list">
+                    <legend class="color__legend" >Color</legend>
+                    <li class="color__input">
+                        <input class="color__checkbox" id="black" name="color" type="checkbox"> 
+                            <label class="color__checkbox-label" for="black">Black</label>
+                        </li>
+                    <li class="color__input">
+                        <input class="color__checkbox" id="blue" type="checkbox">
+                            <label class="color__checkbox-label" for="blue"> Blue</label>
+                    </li>
+                    <li class="color__input">
+                        <input class="color__checkbox" id="green" type="checkbox">
+                            <label class="color__checkbox-label" for="green"> Green</label>
+                    </li>
+                    <li class="color__input">
+                        <input class="color__checkbox" id="white" type="checkbox">
+                            <label class="color__checkbox-label" for="white"> White</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="toys-delivery">
+             <legend class="toys-delivery__legend" >Delivery</legend>
+             <ul>
+                <li class="toys-delivery__shipping">
+                    <input class="toys-delivery__shipping-input" id="free" name="shipping" type="radio">
+                    <label class="toys-delivery__label"  for="free">Free shipping</label> 
+                </li>
+                <li class="toys-delivery__shipping">
+                    <input class="toys-delivery__shipping-input" id="fast" name="shipping" type="radio">
+                    <label class="toys-delivery__label" for="fast">Fast shipping</label>
+                </li>
+             </ul>
+                </div>
+                <div class="amount">
+             <legend class="amount__legend">Amount</legend>
+             <ul class="amount__numbers">
+                <li><input class="amount__input" id="small" name="amount" type="radio"> <label class="amount__label" name="small" for="small"> 0-5</label></li>
+                <li><input class="amount__input" id="middle" name="amount" type="radio"> <label class="amount__label" name="middle" for="middle"> 10-20</label></li>
+                <li><input class="amount__input" id="large"name="amount" type="radio"> <label class="amount__label" for="large"> 20-50</label></li>
+             </ul>
+            </div>
+             <button class="applybutton" type="submit">Apply</button>
+        </div>
+    <section class="container">
+        <ul class="toys-products">
+            <section class="toys-products__list-1">
+                <li>
+                    <a href="#">
+                        <picture>
+                            <source srcset="../img/sharky-tablet.jpg"
+                            media="(max-width: 768px)">
+                            <img class="toys-products__picture" src="../img/sharky.jpg" alt="игрушечная акула">
+                        </picture></a>
+                    <p class="toys-products__price-title">SHARKY BEAN BAG CHAIR COVER</p>
+                    <p class="toys-products__price">$60.00 USD</p>
+            </li>
+          
+            <li>
+                <picture>
+                    <source srcset="../img/brass-tablet.jpg"
+                    media="(max-width: 768px)">
+                    <img class="toys-products__picture" src="../img/brass.jpg" alt="ожерелье из меди">
+                </picture></a>
+                <p class="toys-products__price-title">BRASS DECO FRAMES</p>
+                <p class="toys-products__price">$66.00 USD</p>
+        </li>
+            <li>
+                <picture>
+                    <source srcset="../img/apron-tablet.jpg"
+                    media="(max-width: 768px)">
+                    <img class="toys-products__picture" src="../img/apron.jpg" alt="черный фартук">
+                </picture></a>
+            <p class="toys-products__price-title">CIBO FULL APRON</p>
+            <p class="toys-products__price">$60.00 USD</p>
+        </li>
+            </section>
+            <section class="toys-products__list-2">
+            <li>
+                <picture>
+                    <source srcset="../img/gacha-tablet.jpg"
+                    media="(max-width: 768px)">
+                    <img class="toys-products__picture" src="../img/gacha.jpg" alt="гачапон с жвачкой">
+                </picture></a>
+            <p class="toys-products__price-title">GATCHA GATCHA GUMBALL MACHINE</p>
+            <p class="toys-products__price">$56.00 USD</p></li>
+            <li>
+                <picture>
+                    <source srcset="../img/candle-tablet.jpg"
+                    media="(max-width: 768px)">
+                    <img class="toys-products__picture" src="../img/candle.jpg" alt="ароматическая свеча">
+                </picture></a>
+            <p class="toys-products__price-title">CHRISTMAS ADVENT SCENTED CANDLE</p>
+            <p class="toys-products__price">$29.00 USD</p>
+        </li>
+            <li>
+                <picture>
+                    <source srcset="../img/light-tablet.jpg"
+                    media="(max-width: 768px)">
+                    <img class="toys-products__picture" src="../img/light.jpg" alt="вращающаяся лампа">
+                </picture></a>
+            <p class="toys-products__price-title">TANGLE SPINNING TEA LIGHT</p>
+            <p class="toys-products__price">$56.00 USD</p>
+        </li>
+        </section>
+        </ul>
+        <div class="pointers">
+        <a class="pointers__toys-arrow-l"  href="#"><img src="../img/icon/arrow-l.svg" alt="arrow left"></a> 
+        <a class="pointers__toys-numbers" href="#">1</a> 
+        <a class="pointers__toys-numbers" href="#">2</a> 
+        <a class="pointers__toys-numbers" href="#">3</a> 
+        <a class="pointers__toys-numbers" href="#">4</a> 
+        <a class="pointers__toys-arrow-r"  href="#"><img src="../img/icon/arrow-r.svg" alt="arrow right"></a>
+        </div>
+        </section>
+       
+
+    </main>
+    @@include('blocks/footer.html')
+    <script src="js/app.js" defer></script>
+</body>
+</html>
